@@ -13,7 +13,7 @@ app.get('/Title',(req,res)=>{
     }
     const user =users.find(u=>u.Discription===req.query.user)
     if(user){
-        return  res.json({"message":"due date should not be empty","data":user})
+        return  res.json({"message":"Discription should not be empty","data":user})
     }
     else{
         return  res.json({"message":"Due date should be a valid future date"})
